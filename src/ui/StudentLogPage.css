@@ -1,0 +1,124 @@
+.student-chat-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sl-page-name {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.sl-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.sl-search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.sl-select {
+  width: 100px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  text-align-last: center;
+}
+
+.sl-option {
+  text-align-last: center;
+}
+
+.sl-input {
+  width: 300px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.sl-search-btn {
+  width: 100px;
+  padding: 12px;
+  color: white;
+  background-color: #21a6a1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sl-search-btn:hover {
+  background-color: #1d8e8a;
+}
+
+@media (max-width: 767px) {
+  .sl-page-name {
+    font-size: 20px;
+  }
+
+  .sl-select,
+  .sl-input,
+  .sl-search-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .sl-select {
+    width: 80px;
+  }
+
+  .sl-input {
+    width: 200px;
+  }
+
+  .sl-search-btn {
+    width: 80px;
+  }
+}
+
+@media (max-width: 479px) {
+  .sl-page-name {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  /* .sl-search-form {
+    align-items: flex-start;
+  } */
+
+  .sl-select,
+  .sl-input,
+  .sl-search-btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .sl-select {
+    width: 40%;
+    margin-right: 5px;
+  }
+
+  .sl-input {
+    width: 100%;
+    margin-right: 5px;
+  }
+
+  .sl-search-btn {
+    width: 30%;
+  }
+}

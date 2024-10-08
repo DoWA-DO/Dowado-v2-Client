@@ -1,0 +1,73 @@
+.report-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 50vw;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow-y: auto; /* 컨텐츠가 많을 경우 스크롤 가능 */
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #21a6a1;
+  color: white;
+  font-size: 24px;
+  border-radius: 20px 20px 0 0;
+}
+
+.back-btn {
+  color: white;
+  background-color: #21a6a1;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.report-content {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #21a6a1;
+}
+
+.job-info,
+.major-info {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+@media (max-width: 767px) {
+  .report-container {
+    width: 90vw; /* 반응형 디자인을 위해 너비 조정 */
+  }
+
+  .report-header {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .report-container {
+    width: 95vw;
+  }
+
+  .report-header {
+    font-size: 16px;
+    padding: 8px;
+  }
+}

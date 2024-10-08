@@ -1,0 +1,255 @@
+.sl-table-container {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.sl-table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.sl-table-wrapper {
+  overflow: auto;
+}
+
+.sl-table-head {
+  background-color: #21a6a1;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sl-table-head th {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.sl-table-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.sl-table-body td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.sl-table-body tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.sl-table-body tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.sl-table-head th:nth-child(1),
+.sl-table-body td:nth-child(1) {
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.sl-table-head th:nth-child(2),
+.sl-table-body td:nth-child(2) {
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.sl-table-head th:nth-child(3),
+.sl-table-body td:nth-child(3) {
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.sl-table-head th:nth-child(4),
+.sl-table-body td:nth-child(4) {
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.sl-table-head th:nth-child(5),
+.sl-table-body td:nth-child(5) {
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.log-btn {
+  border: none;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.log-btn:hover {
+  background-color: #21a6a1;
+}
+
+.sl-messages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sl-pagination {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sl-page-btn {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.sl-page-btn:hover {
+  color: #1d8e8a;
+  background-color: white;
+}
+
+.sl-page-btn.active {
+  color: #21a6a1;
+  font-weight: bold;
+}
+
+.sl-arrow-btn {
+  background-color: #ccc;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .sl-table-head th,
+  .sl-table-body td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .sl-table-head th:nth-child(1),
+  .sl-table-body td:nth-child(1) {
+    flex-grow: 1;
+    min-width: 50px;
+  }
+
+  .sl-table-head th:nth-child(2),
+  .sl-table-body td:nth-child(2) {
+    flex-grow: 1;
+    min-width: 50px;
+  }
+
+  .sl-table-head th:nth-child(3),
+  .sl-table-body td:nth-child(3) {
+    flex-grow: 1;
+    min-width: 50px;
+  }
+
+  .sl-table-head th:nth-child(4),
+  .sl-table-body td:nth-child(4) {
+    flex-grow: 1;
+    min-width: 50px;
+  }
+
+  .sl-page-btn {
+    padding: 3px 5px;
+    margin: 0 3px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+  .sl-page-btn.active {
+    color: #21a6a1;
+    font-weight: bold;
+  }
+
+  .sl-arrow-btn {
+    padding: 3px 5px;
+    margin: 0 3px;
+    font-size: 12px;
+  }
+
+  .log-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 479px) {
+  .sl-table-head th,
+  .sl-table-body td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .sl-table-head th:nth-child(1),
+  .sl-table-body td:nth-child(1) {
+    flex-grow: 1;
+    min-width: 40px;
+  }
+
+  .sl-table-head th:nth-child(2),
+  .sl-table-body td:nth-child(2) {
+    flex-grow: 1;
+    min-width: 40px;
+  }
+
+  .sl-table-head th:nth-child(3),
+  .sl-table-body td:nth-child(3) {
+    flex-grow: 1;
+    min-width: 40px;
+  }
+
+  .sl-table-head th:nth-child(4),
+  .sl-table-body td:nth-child(4) {
+    flex-grow: 1;
+    min-width: 40px;
+  }
+
+  .sl-table-head th:nth-child(5),
+  .sl-table-body td:nth-child(5) {
+    flex-grow: 1;
+    min-width: 40px;
+  }
+
+  .sl-page-btn {
+    padding: 2px 4px;
+    margin: 0 2px;
+    font-size: 10px;
+    border-radius: 4px;
+  }
+
+  .sl-page-btn.active {
+    color: #21a6a1;
+    font-weight: bold;
+  }
+
+  .sl-arrow-btn {
+    padding: 2px 4px;
+    margin: 0 2px;
+    font-size: 10px;
+  }
+
+  .log-btn {
+    font-size: 12px;
+    padding: 4px;
+  }
+}

@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Gowun Batang";
+  src: url("https://fonts.gstatic.com/s/gowunbatang/v7/ijwSs5nhRMIjYsdSgcMa3wRhWbH4yuF3PCOgtbXrpkZDCDpAGUeXohsoWQ.0.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff")
+      format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gowun Batang";
+  src: url("https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXiWtFCc.woff2")
+    format("woff2");
+  font-style: normal;
+  unicode-range: U+0020-007E;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Raleway", sans-serif !important;
+  overflow: auto;
+}
+
+.home-logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.home-logo {
+  width: 200px;
+  height: auto;
+}
+
+.home-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.home-title {
+  font-size: 200px;
+  margin: 20px 0;
+  color: #21a6a1;
+}
+
+.home-content {
+  font-size: 25px;
+  white-space: pre-wrap;
+}
+
+.blinking-cursor {
+  font-size: 2rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.home-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.inner {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2fffd;
+  padding: 20px;
+}
+
+.start-btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  margin: 2em auto;
+  border: 2px solid #21a6a1;
+  background-color: #e2fffd;
+  color: #21a6a1;
+  font-size: 26px;
+  text-align: center;
+  line-height: 50px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  animation: blink 1s 1;
+}
+
+.start-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #21a6a1;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.start-btn:hover {
+  color: #ffffff;
+  background-color: #21a6a1;
+  cursor: pointer;
+}
+
+.start-btn:hover:before {
+  transform: translateX(0);
+  z-index: -2;
+}
+
+@media (max-width: 1024px) {
+  .home-logo {
+    width: 150px;
+  }
+
+  .home-title {
+    font-size: 150px;
+  }
+
+  .home-content {
+    font-size: 20px;
+  }
+
+  .start-btn {
+    font-size: 18px;
+    width: 150px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-logo {
+    width: 100px;
+  }
+
+  .home-title {
+    font-size: 90px;
+  }
+
+  .home-content {
+    font-size: 18px;
+  }
+
+  .start-btn {
+    font-size: 16px;
+    width: 150px;
+    line-height: 35px;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .home-logo {
+    width: 100px;
+  }
+
+  .home-title {
+    font-size: 60px;
+  }
+
+  .home-content {
+    font-size: 14px;
+  }
+
+  .start-btn {
+    font-size: 12px;
+    width: 100px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,22 @@
+.dashboard-faculty {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: auto; /* 화면이 작아지면 스크롤 가능하도록 설정 */
+}
+
+/* .top-bar {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+ */
